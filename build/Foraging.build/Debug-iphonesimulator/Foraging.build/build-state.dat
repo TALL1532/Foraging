@@ -1,0 +1,857 @@
+TForaging
+v7
+r0
+t362366643.671769
+cCheck dependencies
+cProcessInfoPlistFile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Info.plist Foraging-Info.plist
+cCompileXIB /Users/Andy/Documents/Foraging/MainWindow.xib
+cCompileXIB /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib
+cCompileXIB /Users/Andy/Documents/Foraging/Classes/ViewLog.xib
+cCompileXIB /Users/Andy/Documents/Foraging/Classes/SentenceGridVC.xib
+cCompileXIB /Users/Andy/Documents/Foraging/Classes/StartMenuVC.xib
+cCompileXIB /Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.xib
+cCpResource build/Debug-iphonesimulator/Foraging.app/CTsentences.txt CTsentences.txt
+cCpResource build/Debug-iphonesimulator/Foraging.app/PRACsentences.txt PRACsentences.txt
+cCpResource build/Debug-iphonesimulator/Foraging.app/instructions.txt instructions.txt
+cCpResource build/Debug-iphonesimulator/Foraging.app/RIsentences.txt RIsentences.txt
+cCpResource build/Debug-iphonesimulator/Foraging.app/Icon.png Icon.png
+cCpResource build/Debug-iphonesimulator/Foraging.app/frog.jpg frog.jpg
+cCpResource build/Debug-iphonesimulator/Foraging.app/tiger.jpg tiger.jpg
+cCpResource build/Debug-iphonesimulator/Foraging.app/butterfly.jpg butterfly.jpg
+cCpResource build/Debug-iphonesimulator/Foraging.app/hamster.jpg hamster.jpg
+cCpResource build/Debug-iphonesimulator/Foraging.app/deer.jpg deer.jpg
+cCpResource build/Debug-iphonesimulator/Foraging.app/fly.jpg fly.jpg
+cCpResource build/Debug-iphonesimulator/Foraging.app/cat.jpg cat.jpg
+cCpResource build/Debug-iphonesimulator/Foraging.app/snake.jpg snake.jpg
+cCpResource build/Debug-iphonesimulator/Foraging.app/dog.jpg dog.jpg
+cCpResource build/Debug-iphonesimulator/Foraging.app/bird.jpg bird.jpg
+cCpResource build/Debug-iphonesimulator/Foraging.app/cardBack.jpg cardBack.jpg
+cCompileXIB /Users/Andy/Documents/Foraging/Classes/MemoryVC.xib
+cProcessPCH /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch.gch Foraging_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/main.o /Users/Andy/Documents/Foraging/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ForagingAppDelegate.o /Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ExpInterfaceVC.o /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ViewLog.o /Users/Andy/Documents/Foraging/Classes/ViewLog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/SentenceGridVC.o /Users/Andy/Documents/Foraging/Classes/SentenceGridVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/StartMenuVC.o /Users/Andy/Documents/Foraging/Classes/StartMenuVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/DisplayAndRecordVC.o /Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/MemoryVC.o /Users/Andy/Documents/Foraging/Classes/MemoryVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging normal i386
+cGenerateDSYMFile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app.dSYM /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging
+cTouch /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004D3764D30000000000000110
+t1295475923
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004CC1288A00000000000F34A0
+t1287727242
+s996512
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004CC128840000000000000733
+t1287727236
+s1843
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000004CC1220900000000000A8450
+t1287725577
+s689232
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/CoreAudioTypes.h
+c000000004CC12203000000000001032E
+t1287725571
+s66350
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MFMailComposeViewController.h
+c000000004CC6561F000000000000291C
+t1288066591
+s10524
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.h
+c000000004CC6561F00000000000000CD
+t1288066591
+s205
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
+c000000004CC6562D000000000009BEC0
+t1288066605
+s638656
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Security.framework/Security
+c000000004CC121E20000000000088320
+t1287725538
+s557856
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/Andy/Documents/Foraging/CTsentences.txt
+c000000004FD69F2A0000000000000805
+t1339465514
+s2053
+
+N/Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.h
+c000000004FE7902400000000000006E0
+t1340575780
+s1760
+i<UIKit/UIKit.h>
+i"SentenceGridVC.h"
+i<AVFoundation/AVFoundation.h>
+i<CoreAudio/CoreAudioTypes.h>
+
+N/Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.m
+c000000004FE8E6600000000000002F45
+t1340663392
+s12101
+i"DisplayAndRecordVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.xib
+c000000004FCD4E7F0000000000006E30
+t1338855039
+s28208
+
+N/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.h
+c000000004FE7F2200000000000000666
+t1340600864
+s1638
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i"ViewLog.h"
+i"StartMenuVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m
+c000000004FE8E2C00000000000001DF9
+t1340662464
+s7673
+i"ExpInterfaceVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib
+c000000004FE78E230000000000010C7A
+t1340575267
+s68730
+
+N/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.h
+c000000004FCAE3B500000000000001BB
+t1338696629
+s443
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i"ExpInterfaceVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m
+c000000004FE7EBEC000000000000079E
+t1340599276
+s1950
+i"ForagingAppDelegate.h"
+
+N/Users/Andy/Documents/Foraging/Classes/MemoryVC.h
+c000000004FE8D7890000000000000B19
+t1340659593
+s2841
+i<UIKit/UIKit.h>
+
+N/Users/Andy/Documents/Foraging/Classes/MemoryVC.m
+c000000004FE8EB560000000000003236
+t1340664662
+s12854
+i"MemoryVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/MemoryVC.xib
+c000000004FDA8B290000000000012C2B
+t1339722537
+s76843
+
+N/Users/Andy/Documents/Foraging/Classes/SentenceGridVC.h
+c000000004FE7F3390000000000000E2E
+t1340601145
+s3630
+i<UIKit/UIKit.h>
+i"DisplayAndRecordVC.h"
+i"MemoryVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/SentenceGridVC.m
+c000000004FE90F320000000000003CD9
+t1340673842
+s15577
+i"SentenceGridVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/SentenceGridVC.xib
+c000000004FD6A1680000000000016CAD
+t1339466088
+s93357
+
+N/Users/Andy/Documents/Foraging/Classes/StartMenuVC.h
+c000000004FE7902400000000000004A9
+t1340575780
+s1193
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i"SentenceGridVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/StartMenuVC.m
+c000000004FE8E1350000000000000EF0
+t1340662069
+s3824
+i"StartMenuVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/StartMenuVC.xib
+c000000004FCBF6B50000000000005C4D
+t1338767029
+s23629
+
+N/Users/Andy/Documents/Foraging/Classes/ViewLog.h
+c000000004FD7FC2900000000000003A1
+t1339554857
+s929
+i<UIKit/UIKit.h>
+i<MessageUI/MessageUI.h>
+i<MessageUI/MFMailComposeViewController.h>
+
+N/Users/Andy/Documents/Foraging/Classes/ViewLog.m
+c000000004FE8D877000000000000244A
+t1340659831
+s9290
+i"ViewLog.h"
+i<MessageUI/MessageUI.h>
+i<MessageUI/MFMailComposeViewController.h>
+
+N/Users/Andy/Documents/Foraging/Classes/ViewLog.xib
+c000000004FCBC1410000000000007620
+t1338753345
+s30240
+
+N/Users/Andy/Documents/Foraging/Foraging_Prefix.pch
+c000000004FCAE23000000000000000B9
+t1338696240
+s185
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/Andy/Documents/Foraging/Icon.png
+c000000004FDA0ED40000000000000975
+t1339690708
+s2421
+
+N/Users/Andy/Documents/Foraging/MainWindow.xib
+c000000004FCAE2300000000000003E72
+t1338696240
+s15986
+
+N/Users/Andy/Documents/Foraging/PRACsentences.txt
+c000000004FD7F2550000000000000188
+t1339552341
+s392
+
+N/Users/Andy/Documents/Foraging/RIsentences.txt
+c000000004FD69F3A0000000000000862
+t1339465530
+s2146
+
+N/Users/Andy/Documents/Foraging/bird.jpg
+c000000004FDA87C60000000000003A9C
+t1339721670
+s15004
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app
+t1340673843
+s952
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app.dSYM
+t1340673843
+s102
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/CTsentences.txt
+t1340662341
+s2053
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/DisplayAndRecordVC.nib
+t1340662341
+s2381
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/ExpInterfaceVC.nib
+t1340662339
+s6285
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging
+t1340673843
+s116720
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Icon.png
+t1340662341
+s2421
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Info.plist
+t1340662339
+s802
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/MainWindow.nib
+t1340662339
+s985
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/MemoryVC.nib
+t1340662341
+s6372
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/PRACsentences.txt
+t1340662341
+s392
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/PkgInfo
+t1340662339
+s8
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/RIsentences.txt
+t1340662341
+s2146
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/SentenceGridVC.nib
+t1340662340
+s8003
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/StartMenuVC.nib
+t1340662340
+s1958
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/ViewLog.nib
+t1340662340
+s2740
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/bird.jpg
+t1340662341
+s15004
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/butterfly.jpg
+t1340662341
+s152433
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/cardBack.jpg
+t1340662341
+s202244
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/cat.jpg
+t1340662341
+s17046
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/deer.jpg
+t1340662341
+s38133
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/dog.jpg
+t1340662341
+s66255
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/fly.jpg
+t1340662341
+s111026
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/frog.jpg
+t1340662341
+s6393
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/hamster.jpg
+t1340662341
+s15187
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/instructions.txt
+t1340662341
+s2013
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/snake.jpg
+t1340662341
+s16561
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/tiger.jpg
+t1340662341
+s114470
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/DisplayAndRecordVC.o
+t1340663392
+s74624
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ExpInterfaceVC.o
+t1340662464
+s70304
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/Foraging.LinkFileList
+c000000004FE8E24300000000000003DF
+t1340662339
+s991
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ForagingAppDelegate.o
+t1340662343
+s56464
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/MemoryVC.o
+t1340664675
+s87784
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/SentenceGridVC.o
+t1340673843
+s98900
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/StartMenuVC.o
+t1340662343
+s56188
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ViewLog.o
+t1340662343
+s70148
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/main.o
+t1340662342
+s6288
+
+N/Users/Andy/Documents/Foraging/butterfly.jpg
+c000000004FDA824D0000000000025371
+t1339720269
+s152433
+
+N/Users/Andy/Documents/Foraging/cardBack.jpg
+c000000004FDA7CF20000000000031604
+t1339718898
+s202244
+
+N/Users/Andy/Documents/Foraging/cat.jpg
+c000000004FDA86E20000000000004296
+t1339721442
+s17046
+
+N/Users/Andy/Documents/Foraging/deer.jpg
+c000000004FDA83C800000000000094F5
+t1339720648
+s38133
+
+N/Users/Andy/Documents/Foraging/dog.jpg
+c000000004FDA877B00000000000102CF
+t1339721595
+s66255
+
+N/Users/Andy/Documents/Foraging/fly.jpg
+c000000004FDA86C5000000000001B1B2
+t1339721413
+s111026
+
+N/Users/Andy/Documents/Foraging/frog.jpg
+c000000004FDA836B00000000000018F9
+t1339720555
+s6393
+
+N/Users/Andy/Documents/Foraging/hamster.jpg
+c000000004FDA83290000000000003B53
+t1339720489
+s15187
+
+N/Users/Andy/Documents/Foraging/instructions.txt
+c000000004FD7F23900000000000007DD
+t1339552313
+s2013
+
+N/Users/Andy/Documents/Foraging/main.m
+c000000004FCAE230000000000000016B
+t1338696240
+s363
+i<UIKit/UIKit.h>
+
+N/Users/Andy/Documents/Foraging/snake.jpg
+c000000004FDA870300000000000040B1
+t1339721475
+s16561
+
+N/Users/Andy/Documents/Foraging/tiger.jpg
+c000000004FDA82D0000000000001BF26
+t1339720400
+s114470
+
+N/var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch.gch
+t1340662342
+s15453392
+
+NForaging-Info.plist
+c000000004FCAE23000000000000004D6
+t1338696240
+s1238
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies362366643#362366643#0(0"0(0#1#0"8644316704#0"0#
+
+CCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/DisplayAndRecordVC.o /Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362356192.605000
+e362356192.985355
+r1
+xCompileC
+xbuild/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/DisplayAndRecordVC.o
+x/Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.m362356192#362356192#0(0"0(0#0#59"/Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.m8657331808#1882"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -I/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources/i386 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/DisplayAndRecordVC.o0#
+
+CCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ExpInterfaceVC.o /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362355264.410557
+e362355264.852305
+r1
+xCompileC
+xbuild/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ExpInterfaceVC.o
+x/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m362355264#362355264#0(0"0(0#0#55"/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m8639077696#1874"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -I/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources/i386 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ExpInterfaceVC.o0#
+
+CCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ForagingAppDelegate.o /Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362355142.912592
+e362355143.065446
+r1
+xCompileC
+xbuild/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ForagingAppDelegate.o
+x/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m362355142#362355143#0(0"0(0#0#60"/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m8656044960#1884"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -I/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources/i386 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ForagingAppDelegate.o0#
+
+CCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/MemoryVC.o /Users/Andy/Documents/Foraging/Classes/MemoryVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362357475.736212
+e362357475.891611
+r1
+xCompileC
+xbuild/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/MemoryVC.o
+x/Users/Andy/Documents/Foraging/Classes/MemoryVC.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/Andy/Documents/Foraging/Classes/MemoryVC.m362357475#362357475#0(0"0(0#0#49"/Users/Andy/Documents/Foraging/Classes/MemoryVC.m8653320864#1862"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -I/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources/i386 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/Classes/MemoryVC.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/MemoryVC.o0#
+
+CCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/SentenceGridVC.o /Users/Andy/Documents/Foraging/Classes/SentenceGridVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362366643.015665
+e362366643.465755
+r1
+xCompileC
+xbuild/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/SentenceGridVC.o
+x/Users/Andy/Documents/Foraging/Classes/SentenceGridVC.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/Andy/Documents/Foraging/Classes/SentenceGridVC.m362366643#362366643#0(0"0(0#0#55"/Users/Andy/Documents/Foraging/Classes/SentenceGridVC.m8628705184#1874"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -I/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources/i386 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/Classes/SentenceGridVC.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/SentenceGridVC.o0#
+
+CCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/StartMenuVC.o /Users/Andy/Documents/Foraging/Classes/StartMenuVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362355143.204480
+e362355143.358867
+r1
+xCompileC
+xbuild/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/StartMenuVC.o
+x/Users/Andy/Documents/Foraging/Classes/StartMenuVC.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/Andy/Documents/Foraging/Classes/StartMenuVC.m362355143#362355143#0(0"0(0#0#52"/Users/Andy/Documents/Foraging/Classes/StartMenuVC.m8640129856#1868"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -I/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources/i386 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/Classes/StartMenuVC.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/StartMenuVC.o0#
+
+CCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ViewLog.o /Users/Andy/Documents/Foraging/Classes/ViewLog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362355143.065543
+e362355143.198140
+r1
+xCompileC
+xbuild/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ViewLog.o
+x/Users/Andy/Documents/Foraging/Classes/ViewLog.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/Andy/Documents/Foraging/Classes/ViewLog.m362355143#362355143#0(0"0(0#0#48"/Users/Andy/Documents/Foraging/Classes/ViewLog.m8643020096#1860"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -I/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources/i386 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/Classes/ViewLog.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/ViewLog.o0#
+
+CCompileC build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/main.o /Users/Andy/Documents/Foraging/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362355142.911630
+e362355142.980667
+r1
+xCompileC
+xbuild/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/main.o
+x/Users/Andy/Documents/Foraging/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@45"Compile /Users/Andy/Documents/Foraging/main.m362355142#362355142#0(0"0(0#0#37"/Users/Andy/Documents/Foraging/main.m8663457536#1846"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -I/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources/i386 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/main.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.xib
+s362355140.973167
+e362355141.638053
+r1
+xCompileXIB
+x/Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.xib:5: note: This view is clipping its content.
+lSLF07#2@41"CompileXIB Classes/DisplayAndRecordVC.xib362355140#362355141#0(146"/* com.apple.ibtool.document.notices *//Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.xib:5: note: This view is clipping its content.1(13@34"This view is clipping its content.362355141#18446744073709551615#0#0(6@61"/Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.xib360547839#5#0#5#0#0"0(0#0#61"/Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.xib8667227040#571"    cd /Users/Andy/Documents/Foraging    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/DisplayAndRecordVC.nib /Users/Andy/Documents/Foraging/Classes/DisplayAndRecordVC.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib
+s362355139.237386
+e362355140.179644
+r1
+xCompileXIB
+x/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib
+lSLF07#2@37"CompileXIB Classes/ExpInterfaceVC.xib362355139#362355140#0(0"0(0#0#57"/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib8630801728#563"    cd /Users/Andy/Documents/Foraging    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/ExpInterfaceVC.nib /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/Andy/Documents/Foraging/Classes/MemoryVC.xib
+s362355141.332700
+e362355142.027846
+r1
+xCompileXIB
+x/Users/Andy/Documents/Foraging/Classes/MemoryVC.xib
+lSLF07#2@31"CompileXIB Classes/MemoryVC.xib362355141#362355142#0(0"0(0#0#51"/Users/Andy/Documents/Foraging/Classes/MemoryVC.xib8636682816#551"    cd /Users/Andy/Documents/Foraging    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/MemoryVC.nib /Users/Andy/Documents/Foraging/Classes/MemoryVC.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/Andy/Documents/Foraging/Classes/SentenceGridVC.xib
+s362355140.179733
+e362355141.271894
+r1
+xCompileXIB
+x/Users/Andy/Documents/Foraging/Classes/SentenceGridVC.xib
+lSLF07#2@37"CompileXIB Classes/SentenceGridVC.xib362355140#362355141#0(0"0(0#0#57"/Users/Andy/Documents/Foraging/Classes/SentenceGridVC.xib8655743552#563"    cd /Users/Andy/Documents/Foraging    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/SentenceGridVC.nib /Users/Andy/Documents/Foraging/Classes/SentenceGridVC.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/Andy/Documents/Foraging/Classes/StartMenuVC.xib
+s362355140.259766
+e362355140.970234
+r1
+xCompileXIB
+x/Users/Andy/Documents/Foraging/Classes/StartMenuVC.xib
+lSLF07#2@34"CompileXIB Classes/StartMenuVC.xib362355140#362355140#0(0"0(0#0#54"/Users/Andy/Documents/Foraging/Classes/StartMenuVC.xib8654645920#557"    cd /Users/Andy/Documents/Foraging    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/StartMenuVC.nib /Users/Andy/Documents/Foraging/Classes/StartMenuVC.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/Andy/Documents/Foraging/Classes/ViewLog.xib
+s362355139.693619
+e362355140.259676
+r1
+xCompileXIB
+x/Users/Andy/Documents/Foraging/Classes/ViewLog.xib
+lSLF07#2@30"CompileXIB Classes/ViewLog.xib362355139#362355140#0(0"0(0#0#50"/Users/Andy/Documents/Foraging/Classes/ViewLog.xib8657864512#549"    cd /Users/Andy/Documents/Foraging    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/ViewLog.nib /Users/Andy/Documents/Foraging/Classes/ViewLog.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/Andy/Documents/Foraging/MainWindow.xib
+s362355139.236711
+e362355139.693531
+r1
+xCompileXIB
+x/Users/Andy/Documents/Foraging/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib362355139#362355139#0(0"0(0#0#45"/Users/Andy/Documents/Foraging/MainWindow.xib8631587648#547"    cd /Users/Andy/Documents/Foraging    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/MainWindow.nib /Users/Andy/Documents/Foraging/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/CTsentences.txt CTsentences.txt
+s362355141.271987
+e362355141.307840
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/CTsentences.txt
+xCTsentences.txt
+lSLF07#2@20"Copy CTsentences.txt362355141#362355141#0(0"0(0#0#46"/Users/Andy/Documents/Foraging/CTsentences.txt8663778464#450"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/CTsentences.txt /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/Icon.png Icon.png
+s362355141.289008
+e362355141.308281
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/Icon.png
+xIcon.png
+lSLF07#2@13"Copy Icon.png362355141#362355141#0(0"0(0#0#39"/Users/Andy/Documents/Foraging/Icon.png8654550784#443"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/Icon.png /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/PRACsentences.txt PRACsentences.txt
+s362355141.272989
+e362355141.307975
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/PRACsentences.txt
+xPRACsentences.txt
+lSLF07#2@22"Copy PRACsentences.txt362355141#362355141#0(0"0(0#0#48"/Users/Andy/Documents/Foraging/PRACsentences.txt8656498976#452"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/PRACsentences.txt /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/RIsentences.txt RIsentences.txt
+s362355141.286101
+e362355141.308178
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/RIsentences.txt
+xRIsentences.txt
+lSLF07#2@20"Copy RIsentences.txt362355141#362355141#0(0"0(0#0#46"/Users/Andy/Documents/Foraging/RIsentences.txt8655686688#450"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/RIsentences.txt /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/bird.jpg bird.jpg
+s362355141.326545
+e362355141.339466
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/bird.jpg
+xbird.jpg
+lSLF07#2@13"Copy bird.jpg362355141#362355141#0(0"0(0#0#39"/Users/Andy/Documents/Foraging/bird.jpg8641174016#443"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/bird.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/butterfly.jpg butterfly.jpg
+s362355141.299010
+e362355141.332538
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/butterfly.jpg
+xbutterfly.jpg
+lSLF07#2@18"Copy butterfly.jpg362355141#362355141#0(0"0(0#0#44"/Users/Andy/Documents/Foraging/butterfly.jpg8630109664#448"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/butterfly.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/cardBack.jpg cardBack.jpg
+s362355141.330792
+e362355141.338115
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/cardBack.jpg
+xcardBack.jpg
+lSLF07#2@17"Copy cardBack.jpg362355141#362355141#0(0"0(0#0#43"/Users/Andy/Documents/Foraging/cardBack.jpg8640404768#447"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/cardBack.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/cat.jpg cat.jpg
+s362355141.315535
+e362355141.332336
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/cat.jpg
+xcat.jpg
+lSLF07#2@12"Copy cat.jpg362355141#362355141#0(0"0(0#0#38"/Users/Andy/Documents/Foraging/cat.jpg8648350848#442"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/cat.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/deer.jpg deer.jpg
+s362355141.308547
+e362355141.331831
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/deer.jpg
+xdeer.jpg
+lSLF07#2@13"Copy deer.jpg362355141#362355141#0(0"0(0#0#39"/Users/Andy/Documents/Foraging/deer.jpg8623008352#443"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/deer.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/dog.jpg dog.jpg
+s362355141.321589
+e362355141.337995
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/dog.jpg
+xdog.jpg
+lSLF07#2@12"Copy dog.jpg362355141#362355141#0(0"0(0#0#38"/Users/Andy/Documents/Foraging/dog.jpg8642732032#442"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/dog.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/fly.jpg fly.jpg
+s362355141.314644
+e362355141.332217
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/fly.jpg
+xfly.jpg
+lSLF07#2@12"Copy fly.jpg362355141#362355141#0(0"0(0#0#38"/Users/Andy/Documents/Foraging/fly.jpg8653966176#442"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/fly.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/frog.jpg frog.jpg
+s362355141.295693
+e362355141.308379
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/frog.jpg
+xfrog.jpg
+lSLF07#2@13"Copy frog.jpg362355141#362355141#0(0"0(0#0#39"/Users/Andy/Documents/Foraging/frog.jpg8640756512#443"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/frog.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/hamster.jpg hamster.jpg
+s362355141.304388
+e362355141.332634
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/hamster.jpg
+xhamster.jpg
+lSLF07#2@16"Copy hamster.jpg362355141#362355141#0(0"0(0#0#42"/Users/Andy/Documents/Foraging/hamster.jpg8627473216#446"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/hamster.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/instructions.txt instructions.txt
+s362355141.277522
+e362355141.308079
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/instructions.txt
+xinstructions.txt
+lSLF07#2@21"Copy instructions.txt362355141#362355141#0(0"0(0#0#47"/Users/Andy/Documents/Foraging/instructions.txt8656135168#451"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/instructions.txt /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/snake.jpg snake.jpg
+s362355141.319351
+e362355141.332435
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/snake.jpg
+xsnake.jpg
+lSLF07#2@14"Copy snake.jpg362355141#362355141#0(0"0(0#0#40"/Users/Andy/Documents/Foraging/snake.jpg8643857376#444"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/snake.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CCpResource build/Debug-iphonesimulator/Foraging.app/tiger.jpg tiger.jpg
+s362355141.297225
+e362355141.308477
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Foraging.app/tiger.jpg
+xtiger.jpg
+lSLF07#2@14"Copy tiger.jpg362355141#362355141#0(0"0(0#0#40"/Users/Andy/Documents/Foraging/tiger.jpg8631203648#444"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Andy/Documents/Foraging/tiger.jpg /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+
+CGenerateDSYMFile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app.dSYM /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging
+s362366643.560587
+e362366643.659583
+r1
+xGenerateDSYMFile
+x/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app.dSYM
+x/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/Foraging.app.dSYM build/Debug-iphonesimulator/Foraging.app/Foraging362366643#362366643#0(0"0(0#0#80"/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging8667618976#362"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging -o /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app.dSYM0#
+
+CLd /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging normal i386
+s362366643.465842
+e362366643.560465
+r1
+xLd
+x/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging
+xnormal
+xi386
+lSLF07#2@85"Link /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging362366643#362366643#0(0"0(0#0#0"8624204288#951"    cd /Users/Andy/Documents/Foraging    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -F/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -filelist /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Objects-normal/i386/Foraging.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework MessageUI -framework AVFoundation -framework CoreAudio -framework Security -o /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Foraging0#
+
+CProcessInfoPlistFile /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Info.plist Foraging-Info.plist
+s362355139.231769
+e362355139.236630
+r1
+xProcessInfoPlistFile
+x/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Info.plist
+xForaging-Info.plist
+lSLF07#2@27"Process Foraging-Info.plist362355139#362355139#0(0"0(0#0#50"/Users/Andy/Documents/Foraging/Foraging-Info.plist8639147520#458"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Foraging-Info.plist -genpkginfo /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app/Info.plist0#
+
+CProcessPCH /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch.gch Foraging_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s362355142.027957
+e362355142.911494
+r1
+xProcessPCH
+x/var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch.gch
+xForaging_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile Foraging_Prefix.pch362355142#362355142#0(0"0(0#0#50"/Users/Andy/Documents/Foraging/Foraging_Prefix.pch8619276704#1745"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator -I/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources/i386 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphonesimulator/Foraging.build/DerivedSources -c /Users/Andy/Documents/Foraging/Foraging_Prefix.pch -o /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-bjpssbgvjbbjvrbmctdzzfwhvtud/Foraging_Prefix.pch.gch0#
+
+CTouch /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app
+s362366643.659663
+e362366643.671717
+r1
+xTouch
+x/Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app
+lSLF07#2@77"Touch /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app362366643#362366643#0(0"0(0#0#0"8665355904#263"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Andy/Documents/Foraging/build/Debug-iphonesimulator/Foraging.app0#
+

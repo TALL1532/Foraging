@@ -1,0 +1,307 @@
+TForaging
+v7
+r0
+t360389430.467366
+cCheck dependencies
+cCpResource build/Debug-iphoneos/Foraging.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/Info.plist Foraging-Info.plist
+cCompileXIB /Users/Andy/Documents/Foraging/MainWindow.xib
+cCompileXIB /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib
+cProcessPCH /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-dlzvrbnmlmtzfwavvgulolffjhfj/Foraging_Prefix.pch.gch Foraging_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/main.o /Users/Andy/Documents/Foraging/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/ForagingAppDelegate.o /Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/ExpInterfaceVC.o /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cProcessProductPackaging "/Users/Andy/Library/MobileDevice/Provisioning Profiles/8EFDBC17-8419-4229-89EB-F4DEDBA5CBBF.mobileprovision" /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/embedded.mobileprovision
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging.xcent
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004D3764930000000000000110
+t1295475859
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+c000000004CB3DFCF00000000000001A7
+t1286856655
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CB3DFCF00000000000001E5
+t1286856655
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC10EF500000000003532B0
+t1287720693
+s3486384
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC10F4700000000003E1F20
+t1287720775
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC10F1C0000000000001466
+t1287720732
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
+c000000004CC11D2E0000000000112F80
+t1287724334
+s1126272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC11AE60000000000000AA1
+t1287723750
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC11B750000000000C769F0
+t1287723893
+s13068784
+
+N/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.h
+c000000004FCAE2FC00000000000000E2
+t1338696444
+s226
+i<UIKit/UIKit.h>
+
+N/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m
+c000000004FCAE2FC000000000000051D
+t1338696444
+s1309
+i"ExpInterfaceVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib
+c000000004FCAE2FC000000000000509B
+t1338696444
+s20635
+
+N/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.h
+c000000004FCAE3B500000000000001BB
+t1338696629
+s443
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i"ExpInterfaceVC.h"
+
+N/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m
+c000000004FCAE3B20000000000000776
+t1338696626
+s1910
+i"ForagingAppDelegate.h"
+
+N/Users/Andy/Documents/Foraging/Foraging_Prefix.pch
+c000000004FCAE23000000000000000B9
+t1338696240
+s185
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/Andy/Documents/Foraging/MainWindow.xib
+c000000004FCAE2300000000000003E72
+t1338696240
+s15986
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app
+t2
+s0
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app.dSYM
+t2
+s0
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/ExpInterfaceVC.nib
+t1338696629
+s795
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/Foraging
+t2
+s0
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/Info.plist
+t1338696629
+s992
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/MainWindow.nib
+t1338696629
+s985
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/PkgInfo
+t1338696629
+s8
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/ResourceRules.plist
+t1338696629
+s485
+
+N/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/embedded.mobileprovision
+t1338696630
+s63339
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging.xcent
+t1338696630
+s422
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/ExpInterfaceVC.o
+t1338696630
+s37896
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/Foraging.LinkFileList
+c000000004FCAE3B50000000000000163
+t1338696629
+s355
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/ForagingAppDelegate.o
+t2
+s0
+
+N/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/main.o
+t1338696630
+s6416
+
+N/Users/Andy/Documents/Foraging/main.m
+c000000004FCAE230000000000000016B
+t1338696240
+s363
+i<UIKit/UIKit.h>
+
+N/Users/Andy/Library/MobileDevice/Provisioning Profiles/8EFDBC17-8419-4229-89EB-F4DEDBA5CBBF.mobileprovision
+c000000004FB5A49F000000000000F76B
+t1337304223
+s63339
+
+N/var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-dlzvrbnmlmtzfwavvgulolffjhfj/Foraging_Prefix.pch.gch
+t1338696630
+s10446552
+
+NForaging-Info.plist
+c000000004FCAE23000000000000004D6
+t1338696240
+s1238
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies360389429#360389429#0(0"0(0#1#0"8620166848#0"0#
+
+CCodeSign /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app
+r0
+
+CCompileC build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/ExpInterfaceVC.o /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s360389430.384771
+e360389430.462717
+r1
+xCompileC
+xbuild/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/ExpInterfaceVC.o
+x/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m360389430#360389430#0(0"0(0#0#55"/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m8616113184#1684"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphoneos -I/Users/Andy/Documents/Foraging/build/Debug-iphoneos/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/DerivedSources/armv7 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-dlzvrbnmlmtzfwavvgulolffjhfj/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/ExpInterfaceVC.o0#
+
+CCompileC build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/ForagingAppDelegate.o /Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s360389430.315930
+e360389430.387461
+r0
+xCompileC
+xbuild/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/ForagingAppDelegate.o
+x/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m: In function '-[ForagingAppDelegate application:didFinishLaunchingWithOptions:]':
+o/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m:21: error: 'RecorderVC' undeclared (first use in this function)
+o/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m:21: error: (Each undeclared identifier is reported only once
+o/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m:21: error: for each function it appears in.)
+lSLF07#2@68"Compile /Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m360389430#360389430#0(496"/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m: In function '-[ForagingAppDelegate application:didFinishLaunchingWithOptions:]':/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m:21: error: 'RecorderVC' undeclared (first use in this function)/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m:21: error: (Each undeclared identifier is reported only once/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m:21: error: for each function it appears in.)1(4@52"'RecorderVC' undeclared (first use in this function)360389430#143#125#0(6@60"/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m360389426#21#0#21#0#43"'*' undeclared (first use in this function)0(0#0#60"/Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m8618727904#1694"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphoneos -I/Users/Andy/Documents/Foraging/build/Debug-iphoneos/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/DerivedSources/armv7 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-dlzvrbnmlmtzfwavvgulolffjhfj/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/Classes/ForagingAppDelegate.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/ForagingAppDelegate.o1#
+
+CCompileC build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/main.o /Users/Andy/Documents/Foraging/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s360389430.314885
+e360389430.384678
+r1
+xCompileC
+xbuild/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/main.o
+x/Users/Andy/Documents/Foraging/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@45"Compile /Users/Andy/Documents/Foraging/main.m360389430#360389430#0(0"0(0#0#37"/Users/Andy/Documents/Foraging/main.m8620605120#1656"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphoneos -I/Users/Andy/Documents/Foraging/build/Debug-iphoneos/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/DerivedSources/armv7 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/DerivedSources -include /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-dlzvrbnmlmtzfwavvgulolffjhfj/Foraging_Prefix.pch -c /Users/Andy/Documents/Foraging/main.m -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Objects-normal/armv7/main.o0#
+
+CCompileXIB /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib
+s360389429.162467
+e360389429.678713
+r1
+xCompileXIB
+x/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on ExpInterfaceVC.
+lSLF07#2@37"CompileXIB Classes/ExpInterfaceVC.xib360389429#360389429#0(222"/* com.apple.ibtool.document.warnings *//Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on ExpInterfaceVC.1(22@109"The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on ExpInterfaceVC.360389429#18446744073709551615#0#0(6@57"/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib360389244#18446744073709551615#0#18446744073709551615#0#0"0(0#0#57"/Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib8618548192#535"    cd /Users/Andy/Documents/Foraging    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/ExpInterfaceVC.nib /Users/Andy/Documents/Foraging/Classes/ExpInterfaceVC.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCompileXIB /Users/Andy/Documents/Foraging/MainWindow.xib
+s360389429.161755
+e360389429.619108
+r1
+xCompileXIB
+x/Users/Andy/Documents/Foraging/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib360389429#360389429#0(0"0(0#0#45"/Users/Andy/Documents/Foraging/MainWindow.xib28992395054481512#519"    cd /Users/Andy/Documents/Foraging    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/MainWindow.nib /Users/Andy/Documents/Foraging/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCpResource build/Debug-iphoneos/Foraging.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+s360389429.141853
+e360389429.161689
+r1
+xCpResource
+xbuild/Debug-iphoneos/Foraging.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist360389429#360389429#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist8620478848#479"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app0#
+
+CGenerateDSYMFile /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app.dSYM /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/Foraging
+r0
+
+CLd /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/Foraging normal armv7
+r0
+
+CProcessInfoPlistFile /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/Info.plist Foraging-Info.plist
+s360389429.144779
+e360389429.160972
+r1
+xProcessInfoPlistFile
+x/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/Info.plist
+xForaging-Info.plist
+lSLF07#2@27"Process Foraging-Info.plist360389429#360389429#0(0"0(0#0#50"/Users/Andy/Documents/Foraging/Foraging-Info.plist8618827776#534"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Foraging-Info.plist -genpkginfo /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/ResourceRules.plist -o /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/Info.plist0#
+
+CProcessPCH /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-dlzvrbnmlmtzfwavvgulolffjhfj/Foraging_Prefix.pch.gch Foraging_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s360389429.678878
+e360389430.314771
+r1
+xProcessPCH
+x/var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-dlzvrbnmlmtzfwavvgulolffjhfj/Foraging_Prefix.pch.gch
+xForaging_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile Foraging_Prefix.pch360389429#360389430#0(0"0(0#0#50"/Users/Andy/Documents/Foraging/Foraging_Prefix.pch8618804640#1561"    cd /Users/Andy/Documents/Foraging    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-generated-files.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-own-target-headers.hmap -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-all-target-headers.hmap -iquote /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging-project-headers.hmap -F/Users/Andy/Documents/Foraging/build/Debug-iphoneos -I/Users/Andy/Documents/Foraging/build/Debug-iphoneos/include -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/DerivedSources/armv7 -I/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/DerivedSources -c /Users/Andy/Documents/Foraging/Foraging_Prefix.pch -o /var/folders/kX/kXvvGX1UHFKkT-aJSWpyU++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Foraging_Prefix-dlzvrbnmlmtzfwavvgulolffjhfj/Foraging_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/Andy/Library/MobileDevice/Provisioning Profiles/8EFDBC17-8419-4229-89EB-F4DEDBA5CBBF.mobileprovision" /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/embedded.mobileprovision
+s360389430.462811
+e360389430.464709
+r1
+xProcessProductPackaging
+x/Users/Andy/Library/MobileDevice/Provisioning Profiles/8EFDBC17-8419-4229-89EB-F4DEDBA5CBBF.mobileprovision
+x/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/embedded.mobileprovision
+lSLF07#2@192"ProcessProductPackaging "/Users/Andy/Library/MobileDevice/Provisioning Profiles/8EFDBC17-8419-4229-89EB-F4DEDBA5CBBF.mobileprovision" build/Debug-iphoneos/Foraging.app/embedded.mobileprovision360389430#360389430#0(0"0(0#0#89"/Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/embedded.mobileprovision8621056032#407"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/Andy/Library/MobileDevice/Provisioning Profiles/8EFDBC17-8419-4229-89EB-F4DEDBA5CBBF.mobileprovision" -o /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging.xcent
+s360389430.465106
+e360389430.467314
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+x/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging.xcent
+lSLF07#2@178"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging.xcent360389430#360389430#0(0"0(0#0#96"/Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging.xcent8620709824#419"    cd /Users/Andy/Documents/Foraging    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/Andy/Documents/Foraging/build/Foraging.build/Debug-iphoneos/Foraging.build/Foraging.xcent0#
+
+CTouch /Users/Andy/Documents/Foraging/build/Debug-iphoneos/Foraging.app
+r0
+
