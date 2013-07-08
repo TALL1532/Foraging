@@ -208,13 +208,6 @@
 	[tag resignFirstResponder];
 	
 }
-/*
-- (void)delayFunction { 
-	[mathIndicator setHidden:YES];
-	[mathIndicator2 setHidden:YES];
-	[mathIndicator3 setHidden:YES];
-}*/
-
 - (void)hideMathIndicators {
 	[mathIndicator setHidden:YES];
 	[mathIndicator2 setHidden:YES];
@@ -314,6 +307,7 @@
             return 4;
         }else return 1;
     }
+    return -1;
 }
 ///////// LOG FUNCTIONS /////////////////////////
 
@@ -406,22 +400,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-	//we're using viewDidAppear to count the number of experiments that have been done
     [self voiceModePressed:nil];
-	/*if (toCrashCounter > 2) {
-		
-		[crashButton setHidden:NO];
-		
-		NSString *crashMessage = [NSString stringWithFormat:@"You should manually crash the program now to avoid a crash in the middle of your fifth trial. \nCrash now?"];
-		
-		UIAlertView *checkAlert = [[UIAlertView alloc] initWithTitle:nil message:crashMessage 
-															delegate:self 
-												   cancelButtonTitle:@"Cancel" 
-												   otherButtonTitles:@"Crash it",nil]; 
-		
-		[checkAlert show];
-		[checkAlert release];
-	}*/
 	
 }
 
@@ -430,23 +409,23 @@
 - (void)saveExpSettings {
 	NSLog(@"saveExpSettings");
 	
-    [SettingsManager setObject:tag.text withKey:@"k_subjectName"];
-    [SettingsManager setInteger:inputMode withKey:@"k_inputMode"];
+    [SettingsManager setObject:tag.text withKey:SUBJECT_NAME];
+    [SettingsManager setInteger:inputMode withKey:INPUT_MODE];
     
-    [SettingsManager setInteger:[delay.text integerValue] withKey:@"k_practice_delay_text"];
-    [SettingsManager setInteger:[delayUpperLimit.text integerValue] withKey:@"k_practice_delay_upper_text"];
+    [SettingsManager setInteger:[delay.text integerValue] withKey:PRACTICE_DELAY_LOW];
+    [SettingsManager setInteger:[delayUpperLimit.text integerValue] withKey:PRACTICE_DELAY_HIGH];
     
-    [SettingsManager setInteger:[delay2.text integerValue] withKey:@"k_connecticuit_delay_text"];
-    [SettingsManager setInteger:[delayUpperLimit2.text integerValue] withKey:@"k_connecticuit_delay_upper_text"];
+    [SettingsManager setInteger:[delay2.text integerValue] withKey:CN_DELAY_LOW];
+    [SettingsManager setInteger:[delayUpperLimit2.text integerValue] withKey:CN_DELAY_HIGH];
     
-    [SettingsManager setInteger:[delay3.text integerValue] withKey:@"k_ri_delay_text"];
-    [SettingsManager setInteger:[delayUpperLimit3.text integerValue] withKey:@"k_ri_delay_upper_text"];
+    [SettingsManager setInteger:[delay3.text integerValue] withKey:RI_DELAY_LOW];
+    [SettingsManager setInteger:[delayUpperLimit3.text integerValue] withKey:RI_DELAY_HIGH];
     
     
-    [SettingsManager setInteger:[setTimeLimit.text integerValue] withKey:@"k_setTimeLimit"];
-    [SettingsManager setInteger:[puzzleWaitTime.text integerValue] withKey:@"k_puzzleTimeLimit"];
+    [SettingsManager setInteger:[setTimeLimit.text integerValue] withKey:SET_TIME_LIMIT];
+    [SettingsManager setInteger:[puzzleWaitTime.text integerValue] withKey:PUZZLE_BREAK_TIME];
 
-    [SettingsManager setInteger:fontSize withKey:@"k_font_size_int"];
+    [SettingsManager setInteger:fontSize withKey:FONT_SIZE];
 
 	[SettingsManager syncronize];
 }
@@ -454,23 +433,23 @@
 - (void)loadExpSettings {
 	NSLog(@"loadExpSettings");
 
-    tag.text = (NSString*)[SettingsManager getObjectWithKey:@"k_subjectName" orWriteAndReturn:@"default_subject"];
-    inputMode = [SettingsManager getIntegerWithKey:@"k_inputMode" orWriteAndReturn:2];
+    tag.text = (NSString*)[SettingsManager getObjectWithKey:SUBJECT_NAME orWriteAndReturn:@"default_subject"];
+    inputMode = [SettingsManager getIntegerWithKey:INPUT_MODE orWriteAndReturn:2];
     
-    delay.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:@"k_practice_delay_text" orWriteAndReturn:0]];
-    delayUpperLimit.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:@"k_practice_delay_upper_text" orWriteAndReturn:1]];
+    delay.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:PRACTICE_DELAY_LOW orWriteAndReturn:0]];
+    delayUpperLimit.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:PRACTICE_DELAY_HIGH orWriteAndReturn:1]];
     
-    delay2.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:@"k_connecticuit_delay_text" orWriteAndReturn:0]];
-    delayUpperLimit2.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:@"k_connecticuit_delay_upper_text" orWriteAndReturn:1]];
+    delay2.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:CN_DELAY_LOW orWriteAndReturn:0]];
+    delayUpperLimit2.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:CN_DELAY_HIGH orWriteAndReturn:1]];
     
-    delay3.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:@"k_ri_delay_text" orWriteAndReturn:0]];
-    delayUpperLimit3.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:@"k_ri_delay_upper_text" orWriteAndReturn:1]];
+    delay3.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:RI_DELAY_LOW orWriteAndReturn:0]];
+    delayUpperLimit3.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:RI_DELAY_HIGH orWriteAndReturn:1]];
     
-    setTimeLimit.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:@"k_setTimeLimit" orWriteAndReturn:360]];
-    puzzleWaitTime.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:@"k_puzzleTimeLimit" orWriteAndReturn:30]];
+    setTimeLimit.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:SET_TIME_LIMIT orWriteAndReturn:360]];
+    puzzleWaitTime.text = [NSString stringWithFormat:@"%d",[SettingsManager getIntegerWithKey:PUZZLE_BREAK_TIME orWriteAndReturn:30]];
 
     
-    fontSize = [SettingsManager getIntegerWithKey:@"k_font_size_int" orWriteAndReturn:30];
+    fontSize = [SettingsManager getIntegerWithKey:FONT_SIZE orWriteAndReturn:30];
     
 		//set recording mode buttons
     if(inputMode == 2) {

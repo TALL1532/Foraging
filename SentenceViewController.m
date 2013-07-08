@@ -7,6 +7,7 @@
 //
 
 #import "SentenceViewController.h"
+#import "ExpInterfaceVC.h"
 
 @interface SentenceViewController ()
 
@@ -188,7 +189,7 @@
 -(void) puzzleButtonPressed:(id)sender{
     int puzzleTime;
     if(setNumber !=0){
-        puzzleTime = [(NSNumber*)[[NSUserDefaults standardUserDefaults] objectForKey:@"k_puzzleTimeLimit"] integerValue] + totalTime;
+        puzzleTime = [(NSNumber*)[[NSUserDefaults standardUserDefaults] objectForKey:PUZZLE_BREAK_TIME] integerValue] + totalTime;
     }else{
         puzzleTime = 30;
     }
@@ -302,11 +303,6 @@
 	return mode;
 }
 
-- (NSString *)getTag {
-	NSString *tag = [[self delegate] getTag];
-	return tag;
-}
-
 
 - (int)getDelayLow {
 	int delay = [[self delegate] getDelayLow:setNumber];
@@ -395,7 +391,7 @@
     drvc = [[DisplayAndRecordVC alloc] init];
 	[drvc setDelegate:self];
     
-    totalTime = [(NSNumber*)[[NSUserDefaults standardUserDefaults] objectForKey:@"k_setTimeLimit"] integerValue];
+    totalTime = [(NSNumber*)[[NSUserDefaults standardUserDefaults] objectForKey:SET_TIME_LIMIT] integerValue];
     if(setNumber ==0){
         totalTime =180;
     }

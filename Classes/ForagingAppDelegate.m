@@ -46,7 +46,6 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive.
      */
-	[vc logIt:@"----- Foraging program opened"];
 }
 
 

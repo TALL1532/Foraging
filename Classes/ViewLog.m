@@ -165,7 +165,7 @@
 - (IBAction)clearLogPressed:(id)sender {
 	
 	
-	UIAlertView *checkAlert = [[UIAlertView alloc] initWithTitle:nil message:@"Are you sure you want to clear the log and delete any audio files for this subject?" 
+	UIAlertView *checkAlert = [[UIAlertView alloc] initWithTitle:nil message:@"Delete all subject data?!?!" 
 													   delegate:self 
 											  cancelButtonTitle:@"Cancel" 
 											   otherButtonTitles:@"Clear Log",nil]; 
@@ -182,77 +182,14 @@
     }
     else if (buttonIndex == 1)
     {
-		
         NSString *directory = [self getDocumentsDirectory];
-		NSString *logFileName = [NSString stringWithFormat:@"/%@-log.txt",expTag];
-		NSString *filePath = [directory stringByAppendingString:logFileName];
-		
-		NSFileManager *fileManager = [[NSFileManager alloc] init];
-		
-		//delete the log file
-		[fileManager removeItemAtPath:filePath  error:nil];
+        NSArray * files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:directory error:nil];
+        for(int i = 0; i < [files count]; i++){
+            NSString *filePath = [NSString stringWithFormat:@"%@/%@",directory,files[i]];
+            [[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];
+        }
 		[self displayLogContents];
-		
-		//delete the settings file also
-		//filePath = [directory stringByAppendingString:@"/ExpSettings.txt"];
-		//[fileManager removeItemAtPath:filePath error:nil];
-		
-		[fileManager release];
-		[self deleteAudioFiles];
     }
-}
-
-- (void)deleteAudioFiles {
-	
-	//initialize necessary filenames and file manager
-	expTag = [[self delegate] getTag];
-	NSString *directory = [self getDocumentsDirectory];
-	NSString *filePath;
-	NSString *audioName;
-	NSFileManager *fileManager = [[NSFileManager alloc] init];
-	
-	int i;
-	// Delete PRAC audio 
-	for (i=1; i<4; i++) {
-		audioName = [NSString stringWithFormat:@"%@-PR-audio%d.caf",expTag,i];
-		filePath = [directory stringByAppendingString:[NSString stringWithFormat:@"/%@",audioName]];
-		[fileManager removeItemAtPath:filePath error:nil];
-	}
-	
-	// Attach CT audio data to email
-	for (i=1; i<22; i++) {
-		audioName = [NSString stringWithFormat:@"%@-CT-audio%d.caf",expTag,i];
-		filePath = [directory stringByAppendingString:[NSString stringWithFormat:@"/%@",audioName]];
-		[fileManager removeItemAtPath:filePath error:nil];
-	}
-	
-	// Attach RI audio data to email
-	for (i=1; i<22; i++) {
-		audioName = [NSString stringWithFormat:@"%@-RI-audio%d.caf",expTag,i];
-		filePath = [directory stringByAppendingString:[NSString stringWithFormat:@"/%@",audioName]];
-		[fileManager removeItemAtPath:filePath error:nil];
-	}
-	
-	// Attatch TLOG audio data to email
-	for (i = 1; i<4;i++) {
-		switch(i) {
-			case 1:
-				audioName = [NSString stringWithFormat:@"%@-PR-TLOG.caf",expTag];
-				break;
-			case 2:
-				audioName = [NSString stringWithFormat:@"%@-CT-TLOG.caf",expTag];
-				break;
-			case 3:
-				audioName = [NSString stringWithFormat:@"%@-RI-TLOG.caf",expTag];
-				break;
-		}
-		filePath = [directory stringByAppendingString:[NSString stringWithFormat:@"/%@",audioName]];
-		[fileManager removeItemAtPath:filePath error:nil];
-	}
-	
-    //remove records
-    filePath = [directory stringByAppendingString:@"/record.csv"];
-    [fileManager removeItemAtPath:filePath error:nil];
 }
 
 - (void)backToMenuPressed {

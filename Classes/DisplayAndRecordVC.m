@@ -7,6 +7,8 @@
 //
 
 #import "DisplayAndRecordVC.h"
+#import "SettingsManager.h"
+#import "ExpInterfaceVC.h"
 
 //////  delayTime set in StartMenuVC //////////
 
@@ -250,8 +252,6 @@
 }
 
 - (void)beginRecording {
-    NSTimeInterval readTime = -[readStart timeIntervalSinceNow];
-    
 	NSLog(@"begin recording");
 	recordingNum++;
 
@@ -277,7 +277,6 @@
 	
 	NSString *directory = [self getDocumentsDirectory];
 	int setNum = [[self delegate] getSetNum];
-	//int CTfirst = [[self delegate] getOrder];
 	NSString *setName = @"";
 	switch (setNum) {
 		case 0:
@@ -378,15 +377,14 @@ NSString *specialString = [NSString stringWithCharacters:&specialChar length:1];
 	[sentenceDisplay setEditable:NO];
 	recording = NO;
 	
-	fontSize = [[self delegate] getFontSize];
+	fontSize = [SettingsManager getIntegerWithKey:FONT_SIZE];
 	[sentenceDisplay setFont:[UIFont systemFontOfSize: fontSize]]; 
 	
 	recordingDelayLow = [[self delegate] getDelayLow];
 	recordingDelayHigh = [[self delegate] getDelayHigh];
 	
-	tag = [[self delegate] getTag];
-	inputMode = [[self delegate] getInputMode];
-	tlogInputMode = [[self delegate] getTlogInputMode];
+	tag = (NSString*)[SettingsManager getObjectWithKey:SUBJECT_NAME];
+	inputMode = [SettingsManager getIntegerWithKey:INPUT_MODE];
     
 	if ((inputMode == 2) || (tlogInputMode == 2)) { //if recording audio
 		[self setupRecording];
@@ -419,14 +417,6 @@ NSString *specialString = [NSString stringWithCharacters:&specialChar length:1];
 	
 	[[self delegate] puzzleQuit];
 	
-	/*
-	UIAlertView *doneAlert = [[UIAlertView alloc] initWithTitle:nil message:@"Puzzle Aborted" 
-													   delegate:self 
-											  cancelButtonTitle:@"OK" 
-											  otherButtonTitles:nil]; 
-	[doneAlert show]; 
-	[doneAlert release]; 
-	*/
 	
 }
 
@@ -444,10 +434,6 @@ NSString *specialString = [NSString stringWithCharacters:&specialChar length:1];
 
 //////////// DELEGATE FUNCTIONS /////////////////////////////////////////////
 
-- (NSString *)getTag {
-	NSString *theTag = [[self delegate] getTag];
-	return theTag;
-}
 
 - (int)getDelay {
 	int delay = [[self delegate] getDelay];

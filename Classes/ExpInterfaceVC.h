@@ -12,13 +12,41 @@
 #import "StartMenuVC.h"
 #import "SettingsManager.h"
 
+
+#define SUBJECT_NAME       @"k_subjectName"
+#define INPUT_MODE         @"k_inputMode"
+#define PRACTICE_DELAY_LOW @"k_practice_delay_text"
+#define PRACTICE_DELAY_HIGH @"k_practice_delay_upper_text"
+#define CN_DELAY_LOW       @"k_connecticuit_delay_text"
+#define CN_DELAY_HIGH      @"k_connecticuit_delay_upper_text"
+#define RI_DELAY_LOW       @"k_ri_delay_text"
+#define RI_DELAY_HIGH      @"k_ri_delay_upper_text"
+#define SET_TIME_LIMIT     @"k_setTimeLimit"
+#define PUZZLE_BREAK_TIME  @"k_puzzleTimeLimit"
+#define FONT_SIZE          @"k_font_size_int"
+
+/*[SettingsManager setObject:tag.text withKey:@"k_subjectName"];
+[SettingsManager setInteger:inputMode withKey:@"k_inputMode"];
+
+[SettingsManager setInteger:[delay.text integerValue] withKey:@"k_practice_delay_text"];
+[SettingsManager setInteger:[delayUpperLimit.text integerValue] withKey:@"k_practice_delay_upper_text"];
+
+[SettingsManager setInteger:[delay2.text integerValue] withKey:@"k_connecticuit_delay_text"];
+[SettingsManager setInteger:[delayUpperLimit2.text integerValue] withKey:@"k_connecticuit_delay_upper_text"];
+
+[SettingsManager setInteger:[delay3.text integerValue] withKey:@"k_ri_delay_text"];
+[SettingsManager setInteger:[delayUpperLimit3.text integerValue] withKey:@"k_ri_delay_upper_text"];
+
+
+[SettingsManager setInteger:[setTimeLimit.text integerValue] withKey:@"k_setTimeLimit"];
+[SettingsManager setInteger:[puzzleWaitTime.text integerValue] withKey:@"k_puzzleTimeLimit"];
+
+[SettingsManager setInteger:fontSize withKey:@"k_font_size_int"];*/
 @class ViewLog;
 @class StartMenuVC;
 
 
 @interface ExpInterfaceVC : UIViewController <UITextViewDelegate, ProcessDataDelegate1> {
-											//<UITextViewDelegate> added so text field delegate works
-											//remember to link delegate outlet of text field to "File's Owner"
     IBOutlet UIButton *connButton;
 	IBOutlet UIButton *pracButton;
     IBOutlet UIButton *riButton;

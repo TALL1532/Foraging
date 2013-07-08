@@ -9,6 +9,7 @@
 
 #import "LoggingSingleton.h"
 #import "SettingsManager.h"
+#import "ExpInterfaceVC.h"
 
 @implementation LoggingSingleton
 
@@ -84,6 +85,6 @@
 
 + (NSString*)getSubjectName{
     [SettingsManager syncronize];
-    return (NSString*)[SettingsManager getObjectWithKey:@"k_subjectName" orWriteAndReturn:@"default_subject"];
+    return (NSString*)[SettingsManager getObjectWithKey:SUBJECT_NAME orWriteAndReturn:@"default_subject"];
 }
 @end
