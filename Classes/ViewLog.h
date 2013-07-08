@@ -16,14 +16,15 @@
 @end										//---comm
 
 
-@interface ViewLog : UIViewController <MFMailComposeViewControllerDelegate>{
+@interface ViewLog : UIViewController <MFMailComposeViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>{
     IBOutlet UITextView *logView;
     IBOutlet UIButton *clearLogButton;
     IBOutlet UIButton *emailLogButton;
     IBOutlet UITextView *tagView;
 	
 	NSString *expTag;
-	
+	NSMutableArray * users;
+    
 	id <ProcessDataDelegate4> delegate;		//---comm
 }
 

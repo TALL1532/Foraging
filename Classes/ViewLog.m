@@ -12,12 +12,46 @@
 
 @implementation ViewLog
 
-@synthesize delegate;												//---comm
+@synthesize delegate;
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell =  [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"names"] autorelease];
+    cell.textLabel.text = [users objectAtIndex:[indexPath indexAtPosition:1]];
+    return cell;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [users count];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSInteger index = [indexPath indexAtPosition:1];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self presentEmail:[users objectAtIndex:index]];
+        [users release];
+    }];
+    
+}
 
 - (IBAction)emailLogPressed:(id)sender {
+    NSString *directory = [self getDocumentsDirectory];
+    NSArray * files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:directory error:nil];
+    users = [[NSMutableArray alloc] init];
+    for(int i = 0; i < [files count]; i++){
+        if ([files[i] rangeOfString:@"-log.txt"].location != NSNotFound) {
+            [users addObject:[files[i] substringToIndex:[files[i] rangeOfString:@"-log.txt"].location]];
+        }
+    }
+    UITableViewController * tableView = [[[UITableViewController alloc] init] autorelease];
+    tableView.modalPresentationStyle = UIModalPresentationFormSheet;
+    tableView.tableView.dataSource = self;
+    tableView.tableView.delegate = self;
+    [self presentViewController:tableView animated:NO completion:nil];
+    
+}
+-(void)presentEmail:(NSString *)subject{
     
 	NSLog(@"Sending email");
-	expTag = [[self delegate] getTag];
+	expTag = subject;
 	
 	
     NSString *directory = [self getDocumentsDirectory];
