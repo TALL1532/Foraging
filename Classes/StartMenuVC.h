@@ -37,7 +37,6 @@
 - (void)puzzleEnded;
 
 //delegate functions
-- (void)logIt:(NSString *)whatToLog;
 - (NSString *)getTag;
 - (int)getDelayLow;
 - (int)getDelayHigh:(int)setNum;

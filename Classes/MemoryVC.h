@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LoggingSingleton.h"
 @protocol ProcessDataDelegate6 <NSObject>	//---comm
 - (void)logIt:(NSString *)stringToLog;		//---comm
 - (void)endMemoryPuzzle;

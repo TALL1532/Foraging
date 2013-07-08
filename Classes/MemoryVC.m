@@ -298,15 +298,7 @@
 		buttonNums[rando] = a;		//move the old number into the position it was swapped with
 		
 	}
-	//Log the button locations
-	//[self logIt:@"----- Button -> GridLocation"];
-	
-	/*
-	for (i = 0; i< arraySize; i++) {
-		NSLog(@"%d - %d",i+1,buttonNums[i]);	
-		//[self logIt:[NSString stringWithFormat:@"----- %d -> %d",i+1,buttonNums[i]]];
-	}
-	*/
+
 	
 	// now that we have a randomized order, put the buttons in the locations corresponding to their randomized order
 	int xPos;
@@ -418,7 +410,7 @@
 											   target:self
 											   action:@selector(puzzleQuit)] autorelease];
 	
-	[[self delegate] logIt:@"----- Memory game visible"];
+	[LoggingSingleton logIt:@"----- Memory game visible"];
 	
     [super viewDidLoad];
 	

@@ -124,7 +124,7 @@
 	//[self.navigationController pushViewController:drvc animated:NO];
     
 	//display the sentence number in the text field of the new window
-    [self logIt:[NSString stringWithFormat:@"SENTENCE %d pressed", [[sentenceToButtonIndecies objectAtIndex:number] integerValue] + 1]];
+    [LoggingSingleton logIt:[NSString stringWithFormat:@"SENTENCE %d pressed", [[sentenceToButtonIndecies objectAtIndex:number] integerValue] + 1]];
 	NSString *theSentence = [sentencesArray objectAtIndex:[[sentenceToButtonIndecies objectAtIndex:number] integerValue]];
     [sentencesDone addObject:[sentenceToButtonIndecies objectAtIndex:number]];
 	[drvc displaySentence:theSentence];
@@ -181,10 +181,6 @@
 
 #pragma mark -
 #pragma mark Misc Methods
-- (void)logIt:(NSString *)stringToLog {
-	//send the log up the chain to WordSearchPuzzleVC, dont log here
-	[[self delegate] logIt:stringToLog];
-}
 
 -(void) puzzleButtonPressed:(id)sender{
     int puzzleTime;
@@ -202,8 +198,6 @@
 	mvc = [[MemoryVC alloc] initWithNibName:@"MemoryVC" bundle:nil];
 	[mvc setDelegate:self];
     [self presentViewController:mvc animated:YES completion:nil];
-	//[self.navigationController pushViewController:mvc animated:YES];
-	
 	[mvc startGame:startTime];
 }
 
@@ -250,7 +244,7 @@
 
 - (void)puzzleQuit {
 	
-	[[self delegate] logIt:@"----- QUIT button pressed"];
+	[LoggingSingleton logIt:@"----- QUIT button pressed"];
 	
     [self dismissViewControllerAnimated:NO completion:nil];
 	//[self.navigationController popViewControllerAnimated:NO];
@@ -289,7 +283,7 @@
         [self.view addSubview:puzzleButton];
         
 		
-		[self logIt:@"----- Set Complete!"];
+		[LoggingSingleton logIt:@"----- Set Complete!"];
     }
 }
 

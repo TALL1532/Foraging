@@ -7,7 +7,7 @@
 //
 
 #import "StartMenuVC.h"
-
+#import "LoggingSingleton.h"
 
 @implementation StartMenuVC
 
@@ -15,16 +15,16 @@
 
 - (IBAction)startButtonPressed:(id)sender {
     
-	[self logIt:@"----- START pressed"];
+	[LoggingSingleton logIt:@"----- START pressed"];
 	
 	int recordingDelayLow = [[self delegate] getDelayLow:setNumber];
 	int recordingDelayHigh = [[self delegate] getDelayHigh:setNumber];
 	
 	if(recordingDelayLow == recordingDelayHigh) {
-		[self logIt:[NSString stringWithFormat:@"----- Sentence delay fixed at %d seconds",recordingDelayLow]];
+		[LoggingSingleton logIt:[NSString stringWithFormat:@"----- Sentence delay fixed at %d seconds",recordingDelayLow]];
 	}
 	else {
-		[self logIt:[NSString stringWithFormat:@"----- Sentence delay random between %d and %d seconds",
+		[LoggingSingleton logIt:[NSString stringWithFormat:@"----- Sentence delay random between %d and %d seconds",
 					 recordingDelayLow,recordingDelayHigh]];
 	}
 	
@@ -32,9 +32,7 @@
 	sgvc = [[SentenceViewController alloc] init];
 	
 	[sgvc setDelegate:self];										//---comm
-	[self presentViewController:sgvc animated:NO completion:nil];
-	//[self.navigationController pushViewController:sgvc animated:NO];
-	
+	[self presentViewController:sgvc animated:NO completion:nil];	
 }
 
 - (void)setSetNumber:(int)setNum { //called by ExpInterfaceVC
@@ -68,7 +66,7 @@
 		fontSize = [[self delegate] getFontSize];
 		[startButton setTitleColor:[UIColor colorWithRed:50.0/255 green:79.0/255 blue:133.0/255 alpha:1.0]
 						  forState:UIControlStateNormal];
-		[self logIt:[NSString stringWithFormat:@"----- Font size: %d",fontSize]];
+		[LoggingSingleton logIt:[NSString stringWithFormat:@"----- Font size: %d",fontSize]];
 		
 	}
 	
@@ -87,7 +85,7 @@
 
 - (void) logIt:(NSString *)whatToLog {
 	
-	[[self delegate] logIt:whatToLog];
+	[LoggingSingleton logIt:whatToLog];
 	
 }
 
@@ -151,17 +149,10 @@
 
 
 - (void)puzzleInterrupted {
-	//NSLog(@"puzzleInterrupted SMVC");
-	
-	//pass the interruption down the chain
-	//[self logIt:@"----- Program closed"];
 	[self puzzleEnded];
-	//[sgvc puzzleInterrupted];
 }
 
 - (void)puzzleEnded {
-	//NSLog(@"puzzle ended SMVC");
-	//[sgvc puzzleQuit];
 	[sgvc release];
 	NSLog(@"sgvc released");
 }
@@ -174,7 +165,7 @@
 	
 	self.navigationItem.title = @"Start Menu";
 	
-	[self logIt:@"----- Start Menu appeared"];
+	[LoggingSingleton logIt:@"----- Start Menu appeared"];
 	
 	[super viewDidLoad];
 }

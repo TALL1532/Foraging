@@ -17,7 +17,7 @@
     
     [self saveExpSettings];
     
-	[self logIt:@"----- PRACTICE set chosen"];
+	[LoggingSingleton logIt:@"----- PRACTICE set chosen"];
 	
 	//push view to StartMenuVC
 	[self.navigationController pushViewController:smvc animated:YES];
@@ -35,7 +35,7 @@
     
     [self saveExpSettings];
 
-	[self logIt:@"----- CONNETICUT set chosen"];
+	[LoggingSingleton logIt:@"----- CONNETICUT set chosen"];
 	
 	//push view to StartMenuVC
 	[self.navigationController pushViewController:smvc animated:YES];
@@ -53,7 +53,7 @@
     
     [self saveExpSettings];
     
-	[self logIt:@"----- RHODE ISLAND set chosen"];
+	[LoggingSingleton logIt:@"----- RHODE ISLAND set chosen"];
 	
 	//push view to StartMenuVC
 	[self.navigationController pushViewController:smvc animated:YES];
@@ -311,53 +311,7 @@
 }
 ///////// LOG FUNCTIONS /////////////////////////
 
-- (void) logIt:(NSString *)whatToLog {
-	
-	NSString *expTag = [self getTag];
-	NSLog(@"To-Log recieved: %@",whatToLog);
-	
-	NSString *directory = [self getDocumentsDirectory];
-	NSString *logFileName = [NSString stringWithFormat:@"/%@-log.txt",expTag];
-	NSString *filePath = [directory stringByAppendingString:logFileName];
-	//NSLog(@"filePath is: %@",filePath);
-	
-	NSFileManager *fileManager = [[NSFileManager alloc] init];
-	if(![fileManager fileExistsAtPath:filePath]) {
-		NSLog(@"Log file does not exist. Creating...");
-		[fileManager createFileAtPath:filePath contents:nil attributes:nil];
-	}
-	else {
-		//NSLog(@"Log file already exists");
-	}
-	
-	NSFileHandle *fileHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];  //telling fileHandle what file write to
-	
-	NSDateFormatter *date_formatter=[[NSDateFormatter alloc]init];
-	[date_formatter setDateFormat:@"MM.dd.yyyy - HH:mm:ss.SSS "];
-	
-	NSString *readDate = [date_formatter stringFromDate:[NSDate date]];
-	
-	[fileHandle truncateFileAtOffset:[fileHandle seekToEndOfFile]]; //setting aFileHandle to write at the end of the file
-	
-	NSString *stringToWrite = readDate;
-	[fileHandle writeData:[stringToWrite dataUsingEncoding:NSUTF8StringEncoding]]; //write date
-	
-	stringToWrite = whatToLog;
-	[fileHandle writeData:[stringToWrite dataUsingEncoding:NSUTF8StringEncoding]]; //actually write the data
-	
-	[fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]]; //add carriage return
-	//[fileHandle closeFile];
-	
-	[fileHandle synchronizeFile]; //adding this makes sure the file is stored!
-	
-	[fileManager release];
-	[date_formatter release];
-}
 
-- (NSString *)getDocumentsDirectory {  
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
-	return [paths objectAtIndex:0];  
-}
 
 - (void)showLogPressed {
 	
@@ -374,30 +328,6 @@
 }
 
 //////// CRASH CONTROL METHODS //////////
-
-- (IBAction)crashPressed:(id)sender {
-	//[self crashProgram];  This was removed by Thomas Deegan.  I dont think there ever was an issue with the AVAudio recorder. If there was it is resolved by using the newer ios firmware
-}
-
-- (void)crashProgram {
-	/********** 
-	 -initializing an array with nothing in it, then trying to access an element is not allowed.
-	 -this will crash the program, clearing all leaked memory.
-	 -crashing the program is important because the AVAudioRecorder method leaks memory (WTF APPLE!?), so 
-	 this program will crash on its own right after loading MemoryVC on the fifth trial that uses voice recording
-	 **********/
-	
-	//first, save the front panel variables
-	[self saveExpSettings];
-	
-	crasher = [[NSArray alloc] init];
-	NSString *endOfTheWorld = [crasher objectAtIndex:10] ;
-	
-	//this will never get called, but accessing the "endOfTheWorld" variable gets rid of the unused variable warning
-	NSLog(@"%@",endOfTheWorld); 
-	
-	
-}
 
 - (void)viewDidAppear:(BOOL)animated {
     [self voiceModePressed:nil];

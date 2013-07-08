@@ -16,6 +16,9 @@
 
 + (LoggingSingleton *)sharedSingleton;
 
++ (void)logIt:(NSString *)whatToLog;
++ (NSString *)getDocumentsDirectory;
+
 - (void)storeTrialDataWithsentenceNumber:(NSInteger)sentenceNumber readingTime:(NSTimeInterval)readingTime delay:(NSInteger)delay;
 
 

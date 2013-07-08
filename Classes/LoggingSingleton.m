@@ -83,6 +83,53 @@
 }
 //This number is reset when the subject is reset in the Admin Screen
 
++ (void)logIt:(NSString *)whatToLog {
+	
+	NSString *expTag = (NSString*)[SettingsManager getObjectWithKey:SUBJECT_NAME];
+	NSLog(@"To-Log recieved: %@",whatToLog);
+	
+	NSString *directory = [LoggingSingleton getDocumentsDirectory];
+	NSString *logFileName = [NSString stringWithFormat:@"/%@-log.txt",expTag];
+	NSString *filePath = [directory stringByAppendingString:logFileName];
+	//NSLog(@"filePath is: %@",filePath);
+	
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	if(![fileManager fileExistsAtPath:filePath]) {
+		NSLog(@"Log file does not exist. Creating...");
+		[fileManager createFileAtPath:filePath contents:nil attributes:nil];
+	}
+	else {
+		//NSLog(@"Log file already exists");
+	}
+	
+	NSFileHandle *fileHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];  //telling fileHandle what file write to
+	
+	NSDateFormatter *date_formatter=[[NSDateFormatter alloc]init];
+	[date_formatter setDateFormat:@"MM.dd.yyyy - HH:mm:ss.SSS "];
+	
+	NSString *readDate = [date_formatter stringFromDate:[NSDate date]];
+	
+	[fileHandle truncateFileAtOffset:[fileHandle seekToEndOfFile]]; //setting aFileHandle to write at the end of the file
+	
+	NSString *stringToWrite = readDate;
+	[fileHandle writeData:[stringToWrite dataUsingEncoding:NSUTF8StringEncoding]]; //write date
+	
+	stringToWrite = whatToLog;
+	[fileHandle writeData:[stringToWrite dataUsingEncoding:NSUTF8StringEncoding]]; //actually write the data
+	
+	[fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]]; //add carriage return
+	//[fileHandle closeFile];
+	
+	[fileHandle synchronizeFile]; //adding this makes sure the file is stored!
+	
+	[date_formatter release];
+}
+
++ (NSString *)getDocumentsDirectory {
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	return [paths objectAtIndex:0];
+}
+
 + (NSString*)getSubjectName{
     [SettingsManager syncronize];
     return (NSString*)[SettingsManager getObjectWithKey:SUBJECT_NAME orWriteAndReturn:@"default_subject"];

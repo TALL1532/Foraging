@@ -39,7 +39,7 @@
 
 - (IBAction)recordPressed:(id)sender {
 	
-	[[self delegate] logIt:@"----- RECORD pressed"];
+	[LoggingSingleton logIt:@"----- RECORD pressed"];
 	
 	recording = YES;	//change state to recording
 	sentenceDisplay.text = @"";	//clear text field for user notes entry
@@ -107,7 +107,7 @@
 
 - (IBAction)stopPressed:(id)sender {
 	
-	[[self delegate] logIt:@"----- END RECORDING pressed"];
+	[LoggingSingleton logIt:@"----- END RECORDING pressed"];
 	
 	if (tlogVersion) {
 		if(tlogInputMode == 1) {
@@ -200,7 +200,7 @@
 	[stopButton setEnabled:NO];
 	
 	sentenceDisplay.text = sentenceToDisplay;
-	[[self delegate] logIt:@"----- Sentence Visible"];
+	[LoggingSingleton logIt:@"----- Sentence Visible"];
     readStart = [[NSDate date] retain];
 }
 
@@ -217,7 +217,7 @@
 	
     delaySecs = rando + recordingDelayLow;
 	
-	[[self delegate] logIt:[NSString stringWithFormat:@"----- Delayed %d seconds",delaySecs]];
+	[LoggingSingleton logIt:[NSString stringWithFormat:@"----- Delayed %d seconds",delaySecs]];
 	return delaySecs;
 }
 
@@ -306,7 +306,7 @@
 		NSLog(@"Sound file does not exist. Creating...");
 	}
 	else {
-		[[self delegate] logIt:@"----- Sound file already exists, overwriting"];
+		[LoggingSingleton logIt:@"----- Sound file already exists, overwriting"];
 	}
 	
 	//create/overwrite file
@@ -410,7 +410,7 @@ NSString *specialString = [NSString stringWithCharacters:&specialChar length:1];
 - (void)puzzleQuit {
 	//NSLog(@"PuzzleQuit DRVC");
 	
-	[[self delegate] logIt:@"----- QUIT button pressed"];
+	[LoggingSingleton logIt:@"----- QUIT button pressed"];
 	
     [self dismissViewControllerAnimated:NO completion:nil];
 	//[self.navigationController popViewControllerAnimated:NO];
@@ -424,7 +424,7 @@ NSString *specialString = [NSString stringWithCharacters:&specialChar length:1];
 	
 	NSString *textEntered = sentenceDisplay.text;
 	//NSLog(@"%@",textEntered);
-	[[self delegate] logIt:[NSString stringWithFormat:@"----- Notes: '%@'",textEntered]];
+	[LoggingSingleton logIt:[NSString stringWithFormat:@"----- Notes: '%@'",textEntered]];
 	
 }
 
