@@ -27,8 +27,6 @@
     [alert release];
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    
-	//NSLog(@"alertView called");
     if(alertView.tag == 22){//22 is called from the quit button
         if(buttonIndex == 0){
             [self puzzleQuit];

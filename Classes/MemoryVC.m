@@ -75,12 +75,13 @@
 
 - (void)endGame {
 	
-	UIAlertView *doneAlert = [[UIAlertView alloc] initWithTitle:nil message:@"Congratulations!" 
-														delegate:self 
+	doneAlert = [[UIAlertView alloc] initWithTitle:nil message:@"Congratulations!" 
+														delegate:nil
 											   cancelButtonTitle:@"Play Again!" 
 											   otherButtonTitles:nil]; 
 	[doneAlert show]; 
 	[doneAlert release];
+    
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -380,6 +381,10 @@
 	int minutes = time / 60;
 	int seconds = time % 60;
 	timerDisp.text = [NSString stringWithFormat:@"%d:%02d",minutes,seconds];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [doneAlert dismissWithClickedButtonIndex:0 animated:NO];
 }
 
 - (void)viewDidLoad {

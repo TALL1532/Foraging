@@ -62,7 +62,7 @@
 	
 	NSMutableArray *buttonArray;
 	//UIView *buttonContainerView;
-	
+	UIAlertView *doneAlert;
 	id <ProcessDataDelegate6> delegate;		//---comm
 
 }
