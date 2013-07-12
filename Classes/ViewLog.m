@@ -125,7 +125,7 @@
 		[picker release];
 	}
 
-    filePath = [directory stringByAppendingString:@"/record.csv"];
+    filePath = [directory stringByAppendingString:[NSString stringWithFormat:@"/%@_record.csv",expTag]];
     NSData * data = [NSData dataWithContentsOfFile:filePath];
     if([fileManager fileExistsAtPath:filePath]) {
         [picker addAttachmentData:data mimeType:@"csv" fileName:@"record.csv"];

@@ -5,7 +5,8 @@
 //  Created by Andrew Battles on 6/14/12.
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
-
+#define DONE_ALERT_TAG 101
+#define QUIT_ALERT_TAG 102
 #import "MemoryVC.h"
 
 
@@ -76,9 +77,10 @@
 - (void)endGame {
 	
 	doneAlert = [[UIAlertView alloc] initWithTitle:nil message:@"Congratulations!" 
-														delegate:nil
+														delegate:self
 											   cancelButtonTitle:@"Play Again!" 
-											   otherButtonTitles:nil]; 
+											   otherButtonTitles:nil];
+    doneAlert.tag = DONE_ALERT_TAG;
 	[doneAlert show]; 
 	[doneAlert release];
     
@@ -86,12 +88,18 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
-	//NSLog(@"alertView called");
-    if(alertView.tag == 22){//22 is called from the quit button
+    if(alertView.tag == DONE_ALERT_TAG){
+        
+        doneAlert = nil;
+        [self restartGame];
+    }
+    if(alertView.tag == QUIT_ALERT_TAG){
         if(buttonIndex == 0){
             [self actualPuzzleQuit];
         }
-    }else [self restartGame];
+    }
+    
+    
 	
 }
 
@@ -330,12 +338,6 @@
 //////////  TIMER FUNCTIONS //////////////////////////////////////////////
 
 - (void)startTimer:(int)time {
-	// Kill timer, if already active
-	
-	//if([timerNoOne isValid]) {
-	//	[timerNoOne invalidate]; 
-	//	NSLog(@"timerNoOne isValid");
-	//}
 	
 	timerNoOne = nil; // ensures we never invalidate an already invalid Timer 
 	
@@ -430,7 +432,7 @@
                                                    delegate:self
                                           cancelButtonTitle:@"OK"
                                               otherButtonTitles:@"cancel",nil];
-    alert.tag = 22;
+    alert.tag = QUIT_ALERT_TAG;
 
     [alert show];
     [alert release];
